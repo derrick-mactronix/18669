@@ -1,0 +1,146 @@
+void DisplayMactronix();
+void DisplayOperationMode();
+void DisplayJrConfirmation();
+void DisplayResetTechMode();
+void DisplayRecoverTechMode();
+void DisplayLoadFullBoat();
+void DisplayLoadEmptyContainer();
+void DisplayLoadFullPB();
+void DisplayLoadEmptyPB();
+void DisplayLoadFullQB();
+void DisplayLoadEmptyQB();
+void DisplayRecoveryUnload();
+void DisplayRemoveBoat();
+void DisplayInPreoperation();
+void DisplayInOperation();
+void DisplayIndexing();
+void DisplayPusherMoving();
+void DisplayRTMoving();
+void DisplayElevMoving();
+void CannotCyclingIndex();
+void DisplayInPreCycling();
+void DisplayCannotCycling();
+void DisplayInCycling();
+void DisplayResumeOrAbort();
+void DisplayTechMenu();
+void DisplayConfigPage();
+void DisplayConfigData();
+void DisplayTechInputPage_1();
+void DisplayTechInputPage_1Data();
+void DisplayTechInputPage_2();
+void DisplayTechInputPage_2Data();
+void DisplayTechInputPage_3();
+void DisplayTechInputPage_3Data();
+void DisplayTechInputPage_4();
+void DisplayTechInputPage_4Data();
+void DisplayTechInputPage_5();
+void DisplayTechInputPage_5Data();
+void DisplayTechOutputPage_1();
+void DisplayTechOutputPage_2();
+void DisplayTechOutputPage_3();
+void DisplayCalPusher();
+void DisplayErrorMessage(int wErrorCode,
+                         int wRetry);
+void GetErrorStringFromCode(int   wErrorCode,
+                            char *szErrorString);
+void DisplayAskPassword();
+
+void DisplayCalPusherResult(int pb_steps, int qb_steps);
+
+int  CheckPassword();
+int  CheckPassword2();
+void DisplayPasswordSetting();
+void SetPassword();
+
+int  MachineReset();
+int  JrTransfer();
+int  DoJrLoad();
+int  DoJrUnload();
+int  SrTransfer();
+int  DoPbToQbLoad();
+int  DoPbToQbUnload();
+int  DoQbToPbLoad();
+int  DoQbToPbUnload();
+int  DoRecovery();
+void DoMachineCycle();
+int  DoTechnician();
+int  SystemConfig();
+int  TechInput();
+int  TechOutput();
+void init();
+void AlarmOn();
+void AlarmOff();
+void Beep();
+void InitIOBoard();
+void setMotorDrive(int motor,
+                   int direction);
+int  myinp(int port);
+int  BoatCheck();
+int  checkPBhbar();
+int  checkBoatAndWafer(int wafer);
+int  checkPBDirectionAfterPusher(int dir);
+int  checkPBDirectionBeforePusher();
+
+void Pause();
+int  upSafetyCheck();
+int  pauseCheck();
+int  overHeatCheck();
+int  waitCmdAfterPause();
+int  waitCmdAfterOverheat();
+int  IsPbPresent();
+int  IsWaferInBoat();
+int  IsQbPresent();
+int  IsQbPresent2();
+int  IsStartPressed();
+int  IsJrButtonPressed();
+int  IsPauseButtonPressed();
+int  IsAdaptorPresent();
+void msDelay(unsigned int wDelayTime);
+void Delay10uSeconds(unsigned int wDelayTime);
+void Delay100usec(unsigned int wDelayTime);
+
+
+int  ElevUp();
+int  ElevMoveDown();
+int  ElevMoveHome();
+
+int  IndexToFront();
+int  IndexToBack();
+void MoveOneStepCW();
+void MoveOneStepCCW();
+int  CalibratePusher();
+int  CalibratePusher1();
+int  CalibratePusher2();
+int  PushUp(int dir);
+int  PushDown();
+int  TopLowRetainerOpen();
+int  TopRetainerOpen();
+int  LowRetainerOpen();
+int  LowOpenTopClose();
+int  TopLowRetainerClose();
+int  TopRetainerClose();
+int  LowRetainerClose();
+int  IsIndexAtFront();
+int  IsIndexAtBack();
+
+
+int  IsOverHeated();
+int  IsElevAtTopRetainerPB();
+int  IsElevAtLowRetainerPB();
+int  IsElevAtTopRetainerQB();
+int  IsElevAtLowRetainerQB();
+int  IsElevQbSpeedChange();
+int  IsElevPlatformSpeedChange();
+int  IsElevHome();
+int  IsPusherHome();
+int  IsTopRetainerOpen();
+int  IsTopRetainerClose();
+int  IsLowRetainerOpen();
+int  IsLowRetainerClose();
+int  IsElevUpSafe();
+int  IsPBHBDirFront();
+int  IsPBDirFrontOn();
+int  IsPBDirBackOn();
+
+void SaveSettings();
+void RestoreSettings();
