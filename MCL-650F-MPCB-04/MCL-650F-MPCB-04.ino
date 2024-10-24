@@ -89,6 +89,11 @@ void loop() {
         g_bAdaptor = TRUE;
     }
 
+    // for 18669, set in secret menu
+    // g_bPusher = TRUE;
+    // g_bPusherForPB = TRUE;
+    // g_bCheckOverHeat = FALSE;
+
     if ((g_bPusher != TRUE) && (g_bPusher != FALSE)) {
         g_bPusher = FALSE;
     }

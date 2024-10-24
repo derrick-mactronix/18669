@@ -1,0 +1,6 @@
+{
+    "configuration": "cpu=atmega2560",
+    "board": "arduino:avr:mega",
+    "port": "COM8",
+    "sketch": "MCL-650F-MPCB-04\\MCL-650F-MPCB-04.ino"
+}
